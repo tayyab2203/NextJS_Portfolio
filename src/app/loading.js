@@ -17,7 +17,7 @@ export default function Loading() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-dry_sage-700 text-lg"
+          className="text-dry-sage-700 text-lg"
         >
           Loading...
         </motion.p>

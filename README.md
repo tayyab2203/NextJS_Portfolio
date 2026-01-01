@@ -10,7 +10,7 @@ A modern, production-ready portfolio website built with Next.js, featuring AI-po
 - **Performance Optimized**: Fast loading times and smooth animations
 - **SEO Friendly**: Proper meta tags and semantic HTML
 - **Accessible**: WCAG compliant with proper ARIA labels
-- **Contact Options**: Email, WhatsApp, Calendly integration, and contact form
+- **Contact Options**: Email, WhatsApp, Cal.com integration, and contact form
 
 ## 🛠️ Tech Stack
 
@@ -50,8 +50,8 @@ npm run dev
 
 1. **Contact Information** (`src/app/contact/page.js`):
    - Update email address
-   - Update WhatsApp number (line 38): `const whatsappNumber = '1234567890';`
-   - Update Calendly URL
+   - Update WhatsApp number (line 58): `const whatsappNumber = '1234567890';`
+   - Update Cal.com URL (replace `tayyabsajjad4679` with your Cal.com username)
    - Update social media links
 
 2. **Hero Section** (`src/components/Hero.jsx`):

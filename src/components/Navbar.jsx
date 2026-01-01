@@ -35,8 +35,8 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-charcoal_brown/95 backdrop-blur-md shadow-lg border-b border-ebony/50'
-          : 'bg-charcoal_brown/80 backdrop-blur-sm border-b border-ebony/30'
+          ? 'bg-charcoal-brown/95 backdrop-blur-md shadow-lg border-b border-ebony/50'
+          : 'bg-charcoal-brown/80 backdrop-blur-sm border-b border-ebony/30'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl font-bold font-comfortaa bg-gradient-to-r from-camel to-khaki_beige bg-clip-text  hover:from-khaki_beige hover:to-dry_sage transition-all duration-300"
+            className="text-2xl font-bold font-comfortaa bg-gradient-to-r from-camel to-khaki-beige bg-clip-text text-transparent hover:from-khaki-beige hover:to-dry-sage transition-all duration-300"
           >
             Tayyab Sajjad
           </Link>
@@ -62,8 +62,8 @@ export default function Navbar() {
                   <span
                     className={`relative z-10 ${
                       isActive
-                        ? 'text-khaki_beige font-semibold'
-                        : 'text-dry_sage-700 hover:text-khaki_beige'
+                        ? 'text-khaki-beige font-semibold'
+                        : 'text-dry-sage-700 hover:text-khaki-beige'
                     }`}
                   >
                     {link.name}
@@ -86,7 +86,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg text-dry_sage-700 hover:text-khaki_beige hover:bg-ebony/30 transition-all duration-300"
+            className="md:hidden p-2 rounded-lg text-dry-sage-700 hover:text-khaki-beige hover:bg-ebony/30 transition-all duration-300"
             aria-label="Toggle menu"
           >
             <motion.div
@@ -107,7 +107,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden border-t border-ebony/30 bg-charcoal_brown/95 backdrop-blur-md"
+            className="md:hidden border-t border-ebony/30 bg-charcoal-brown/95 backdrop-blur-md"
           >
             {links.map((link, index) => {
               const isActive = pathname === link.path;
@@ -123,8 +123,8 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)}
                     className={`block px-6 py-3 transition-all duration-300 ${
                       isActive
-                        ? 'text-khaki_beige bg-ebony/50 font-semibold border-l-4 border-camel'
-                        : 'text-dry_sage-700 hover:text-khaki_beige hover:bg-ebony/30'
+                        ? 'text-khaki-beige bg-ebony/50 font-semibold border-l-4 border-camel'
+                        : 'text-dry-sage-700 hover:text-khaki-beige hover:bg-ebony/30'
                     }`}
                   >
                     {link.name}

@@ -49,10 +49,10 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#333d29" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>
-      <body className="bg-black text-khaki_beige-900 antialiased">
+      <body className="bg-black text-khaki-beige-900 antialiased" suppressHydrationWarning>
         <ErrorBoundary>
           <Navbar />
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen pt-20">{children}</main>
           <Footer />
         </ErrorBoundary>
       </body>

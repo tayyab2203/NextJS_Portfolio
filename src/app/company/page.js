@@ -84,7 +84,7 @@ export default function Company() {
         >
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-khaki_beige font-comfortaa">
+              <h2 className="text-3xl font-bold mb-6 text-khaki-beige font-comfortaa">
                 About {companyInfo.name}
               </h2>
               <p className="text-almond_cream/80 leading-relaxed mb-4">
@@ -102,7 +102,7 @@ export default function Company() {
                     href={companyInfo.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-stone_brown hover:text-khaki_beige transition"
+                    className="flex items-center gap-2 text-stone_brown hover:text-khaki-beige transition"
                   >
                     <Globe size={20} />
                     <span>Visit Website</span>
@@ -111,7 +111,7 @@ export default function Company() {
                 {companyInfo.email && (
                   <a
                     href={`mailto:${companyInfo.email}`}
-                    className="flex items-center gap-2 text-stone_brown hover:text-khaki_beige transition"
+                    className="flex items-center gap-2 text-stone_brown hover:text-khaki-beige transition"
                   >
                     <Mail size={20} />
                     <span>Contact Us</span>
@@ -124,19 +124,19 @@ export default function Company() {
               <h3 className="text-2xl font-bold mb-6 text-almond_cream">Company Details</h3>
               <div className="space-y-4">
                 <div>
-                  <span className="text-khaki_beige font-semibold">Industry:</span>
+                  <span className="text-khaki-beige font-semibold">Industry:</span>
                   <span className="text-almond_cream/80 ml-2">{companyInfo.industry}</span>
                 </div>
                 <div>
-                  <span className="text-khaki_beige font-semibold">Founded:</span>
+                  <span className="text-khaki-beige font-semibold">Founded:</span>
                   <span className="text-almond_cream/80 ml-2">{companyInfo.founded}</span>
                 </div>
                 <div>
-                  <span className="text-khaki_beige font-semibold">Location:</span>
+                  <span className="text-khaki-beige font-semibold">Location:</span>
                   <span className="text-almond_cream/80 ml-2">{companyInfo.location}</span>
                 </div>
                 <div>
-                  <span className="text-khaki_beige font-semibold">Team Size:</span>
+                  <span className="text-khaki-beige font-semibold">Team Size:</span>
                   <span className="text-almond_cream/80 ml-2">{team.total} members</span>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function Company() {
                 className="bg-jet_black/50 p-6 rounded-lg border border-stone_brown/20"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-khaki_beige">{dept.name}</h3>
+                  <h3 className="text-xl font-bold text-khaki-beige">{dept.name}</h3>
                   <span className="text-stone_brown font-bold text-lg">{dept.size}</span>
                 </div>
                 <p className="text-almond_cream/70">{dept.description}</p>
@@ -220,7 +220,7 @@ export default function Company() {
             transition={{ duration: 0.8 }}
             className="bg-gradient-to-br from-jet_black to-jet_black-300 p-8 rounded-lg border border-stone_brown/30"
           >
-            <h2 className="text-2xl font-bold mb-4 text-khaki_beige font-comfortaa">
+            <h2 className="text-2xl font-bold mb-4 text-khaki-beige font-comfortaa">
               {vision.title}
             </h2>
             <p className="text-almond_cream/80 leading-relaxed">{vision.content}</p>
@@ -233,7 +233,7 @@ export default function Company() {
             transition={{ duration: 0.8 }}
             className="bg-gradient-to-br from-jet_black to-jet_black-300 p-8 rounded-lg border border-stone_brown/30"
           >
-            <h2 className="text-2xl font-bold mb-4 text-khaki_beige font-comfortaa">
+            <h2 className="text-2xl font-bold mb-4 text-khaki-beige font-comfortaa">
               {mission.title}
             </h2>
             <p className="text-almond_cream/80 leading-relaxed">{mission.content}</p>
@@ -261,7 +261,7 @@ export default function Company() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-jet_black/50 p-6 rounded-lg border border-stone_brown/20"
               >
-                <h3 className="text-xl font-bold text-khaki_beige mb-2">{value.title}</h3>
+                <h3 className="text-xl font-bold text-khaki-beige mb-2">{value.title}</h3>
                 <p className="text-almond_cream/80">{value.description}</p>
               </motion.div>
             ))}
@@ -296,7 +296,7 @@ export default function Company() {
                       <h3 className="text-xl font-bold text-almond_cream mb-2 md:mb-0">
                         {milestone.title}
                       </h3>
-                      <span className="text-khaki_beige text-sm">{milestone.date}</span>
+                      <span className="text-khaki-beige text-sm">{milestone.date}</span>
                     </div>
                     <p className="text-almond_cream/80">{milestone.description}</p>
                   </div>

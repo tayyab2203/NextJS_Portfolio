@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark_walnut: {
+        'dark-walnut': {
           DEFAULT: '#582f0e',
           100: '#120903',
           200: '#231306',
@@ -18,7 +18,7 @@ module.exports = {
           800: '#e9a772',
           900: '#f4d3b8'
         },
-        saddle_brown: {
+        'saddle-brown': {
           DEFAULT: '#7f4f24',
           100: '#191007',
           200: '#331f0e',
@@ -30,7 +30,7 @@ module.exports = {
           800: '#e0b793',
           900: '#f0dbc9'
         },
-        toffee_brown: {
+        'toffee-brown': {
           DEFAULT: '#936639',
           100: '#1d140b',
           200: '#3b2917',
@@ -42,7 +42,7 @@ module.exports = {
           800: '#ddc2a7',
           900: '#eee0d3'
         },
-        camel: {
+        'camel': {
           DEFAULT: '#a68a64',
           100: '#221c13',
           200: '#433727',
@@ -54,7 +54,7 @@ module.exports = {
           800: '#dbd0c1',
           900: '#ede8e0'
         },
-        khaki_beige: {
+        'khaki-beige': {
           DEFAULT: '#b6ad90',
           100: '#27241a',
           200: '#4f4934',
@@ -66,7 +66,7 @@ module.exports = {
           800: '#e2ded3',
           900: '#f0efe9'
         },
-        dry_sage: {
+        'dry-sage': {
           DEFAULT: '#c2c5aa',
           100: '#2a2c1e',
           200: '#54573b',
@@ -78,7 +78,7 @@ module.exports = {
           800: '#e7e8dd',
           900: '#f3f3ee'
         },
-        dusty_olive: {
+        'dusty-olive': {
           DEFAULT: '#656d4a',
           100: '#14160f',
           200: '#282c1e',
@@ -90,7 +90,7 @@ module.exports = {
           800: '#c4cab1',
           900: '#e2e5d8'
         },
-        ebony: {
+        'ebony': {
           DEFAULT: '#414833',
           100: '#0d0e0a',
           200: '#1a1d14',
@@ -102,7 +102,7 @@ module.exports = {
           800: '#b6bfa4',
           900: '#dadfd2'
         },
-        charcoal_brown: {
+        'charcoal-brown': {
           DEFAULT: '#333d29',
           100: '#0a0c08',
           200: '#141810',
@@ -114,10 +114,6 @@ module.exports = {
           800: '#adbe9d',
           900: '#d6dece'
         },
-        // Keep black for backgrounds
-        black: {
-          DEFAULT: '#000000',
-        }
       },
       fontFamily: {
         comfortaa: ['Comfortaa', 'cursive'],

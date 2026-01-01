@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import TypingEffect from './TypingEffect';
 import Link from 'next/link';
-import { ArrowRight, Download, Sparkles, Code, Rocket } from 'lucide-react';
+import { ArrowRight, Download, Sparkles, Code, Rocket, Calendar } from 'lucide-react';
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -35,7 +35,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal_brown via-black to-charcoal_brown pt-20">
+    <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-gradient-to-br from-charcoal-brown via-black to-charcoal-brown">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -60,7 +60,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <motion.div
@@ -77,7 +77,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ebony/50 border border-camel/30 mb-6"
             >
               <Sparkles className="text-camel" size={16} />
-              <span className="text-dry_sage-600 text-sm font-medium">Available for Projects</span>
+              <span className="text-dry-sage-600 text-sm font-medium">Available for Projects</span>
             </motion.div>
 
             {/* Main Heading */}
@@ -87,13 +87,13 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 font-comfortaa leading-tight"
             >
-              <span className="text-khaki_beige-900">Transforming</span>
+              <span className="text-khaki-beige-900">Transforming</span>
               <br />
-              <span className="bg-gradient-to-r from-camel via-khaki_beige to-dry_sage bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-camel via-khaki-beige to-dry-sage bg-clip-text text-transparent">
                 Ideas Into
               </span>
               <br />
-              <span className="text-khaki_beige-900">Digital Reality</span>
+              <span className="text-khaki-beige-900">Digital Reality</span>
             </motion.h1>
 
             {/* Subheading with Typing Effect */}
@@ -103,7 +103,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="mb-8"
             >
-              <p className="text-xl sm:text-2xl md:text-3xl text-dry_sage-700 font-comfortaa mb-2">
+              <p className="text-xl sm:text-2xl md:text-3xl text-dry-sage-700 font-comfortaa mb-2">
                 I'm a{' '}
                 <span className="text-camel font-semibold">
                   <TypingEffect
@@ -114,7 +114,7 @@ export default function Hero() {
                   />
                 </span>
               </p>
-              <p className="text-dry_sage-600 text-lg mt-4 max-w-2xl mx-auto lg:mx-0">
+              <p className="text-dry-sage-600 text-lg mt-4 max-w-2xl mx-auto lg:mx-0">
                 Crafting exceptional digital experiences with cutting-edge technology and creative problem-solving.
               </p>
             </motion.div>
@@ -136,10 +136,10 @@ export default function Hero() {
                   className="text-center lg:text-left"
                 >
                   <div className="flex items-center gap-2 mb-1">
-                    <stat.icon className="text-toffee_brown" size={20} />
+                    <stat.icon className="text-toffee-brown" size={20} />
                     <span className="text-3xl font-bold text-camel">{stat.value}</span>
                   </div>
-                  <p className="text-dry_sage-600 text-sm">{stat.label}</p>
+                  <p className="text-dry-sage-600 text-sm">{stat.label}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -149,23 +149,32 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.9 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start"
             >
               <Link
                 href="/contact"
-                className="group relative bg-gradient-to-r from-toffee_brown to-saddle_brown hover:from-saddle_brown hover:to-toffee_brown text-khaki_beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-2xl hover:scale-105 overflow-hidden"
+                className="group relative bg-gradient-to-r from-toffee-brown to-saddle-brown hover:from-saddle-brown hover:to-toffee-brown text-khaki-beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-2xl hover:scale-105 overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   Let's Work Together
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </span>
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-camel to-khaki_beige opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                  className="absolute inset-0 bg-gradient-to-r from-camel to-khaki-beige opacity-0 group-hover:opacity-20 transition-opacity duration-300"
                 />
               </Link>
+              <a
+                href="https://cal.com/tayyabsajjad4679"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gradient-to-r from-camel to-khaki-beige hover:from-khaki-beige hover:to-camel text-charcoal-brown px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-2xl hover:scale-105"
+              >
+                <Calendar size={20} className="group-hover:scale-110 transition-transform" />
+                Book a Meeting
+              </a>
               <Link
                 href="/projects"
-                className="group border-2 border-camel text-camel px-8 py-4 rounded-xl font-semibold hover:bg-ebony/40 hover:border-khaki_beige hover:text-khaki_beige transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                className="group border-2 border-camel text-camel px-8 py-4 rounded-xl font-semibold hover:bg-ebony/40 hover:border-khaki-beige hover:text-khaki-beige transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
               >
                 View My Work
                 <Code size={20} className="group-hover:rotate-12 transition-transform" />
@@ -192,33 +201,33 @@ export default function Hero() {
                   repeat: Infinity,
                   ease: 'easeInOut',
                 }}
-                className="relative bg-gradient-to-br from-ebony/80 to-charcoal_brown/80 p-8 rounded-2xl border border-camel/30 shadow-2xl backdrop-blur-sm"
+                className="relative bg-gradient-to-br from-ebony/80 to-charcoal-brown/80 p-8 rounded-2xl border border-camel/30 shadow-2xl backdrop-blur-sm"
               >
                 {/* Code Preview Effect */}
                 <div className="space-y-3">
                   <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-saddle_brown" />
-                    <div className="w-3 h-3 rounded-full bg-toffee_brown" />
+                    <div className="w-3 h-3 rounded-full bg-saddle-brown" />
+                    <div className="w-3 h-3 rounded-full bg-toffee-brown" />
                     <div className="w-3 h-3 rounded-full bg-camel" />
                   </div>
                   <div className="space-y-2 font-mono text-sm">
                     <div className="flex gap-2">
-                      <span className="text-toffee_brown">const</span>
-                      <span className="text-khaki_beige-900">developer</span>
-                      <span className="text-dry_sage-600">=</span>
+                      <span className="text-toffee-brown">const</span>
+                      <span className="text-khaki-beige-900">developer</span>
+                      <span className="text-dry-sage-600">=</span>
                       <span className="text-camel">{'{'}</span>
                     </div>
                     <div className="pl-4 space-y-1">
                       <div>
-                        <span className="text-dry_sage-600">  skill:</span>
-                        <span className="text-khaki_beige-900"> 'Full-Stack'</span>
+                        <span className="text-dry-sage-600">  skill:</span>
+                        <span className="text-khaki-beige-900"> 'Full-Stack'</span>
                       </div>
                       <div>
-                        <span className="text-dry_sage-600">  passion:</span>
-                        <span className="text-khaki_beige-900"> 'Innovation'</span>
+                        <span className="text-dry-sage-600">  passion:</span>
+                        <span className="text-khaki-beige-900"> 'Innovation'</span>
                       </div>
                       <div>
-                        <span className="text-dry_sage-600">  status:</span>
+                        <span className="text-dry-sage-600">  status:</span>
                         <span className="text-camel"> 'Available'</span>
                       </div>
                     </div>
@@ -232,16 +241,16 @@ export default function Hero() {
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                  className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-toffee_brown to-camel rounded-full flex items-center justify-center border-2 border-charcoal_brown shadow-lg"
+                  className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-toffee-brown to-camel rounded-full flex items-center justify-center border-2 border-charcoal-brown shadow-lg"
                 >
-                  <Code className="text-charcoal_brown" size={24} />
+                  <Code className="text-charcoal-brown" size={24} />
                 </motion.div>
                 <motion.div
                   animate={{ rotate: -360 }}
                   transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-                  className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-camel to-khaki_beige rounded-full flex items-center justify-center border-2 border-charcoal_brown shadow-lg"
+                  className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-camel to-khaki-beige rounded-full flex items-center justify-center border-2 border-charcoal-brown shadow-lg"
                 >
-                  <Rocket className="text-charcoal_brown" size={18} />
+                  <Rocket className="text-charcoal-brown" size={18} />
                 </motion.div>
               </motion.div>
             </div>

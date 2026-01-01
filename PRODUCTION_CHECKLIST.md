@@ -7,7 +7,7 @@
 - [ ] Replace placeholder images with actual project images
 - [ ] Update all social media links
 - [ ] Update WhatsApp number in `src/app/contact/page.js` (line 38)
-- [ ] Update Calendly URL
+- [ ] Update Cal.com URL (replace username in contact page and footer)
 - [ ] Update company information
 - [ ] Update projects with real data and metrics
 - [ ] Update skills and certifications
@@ -25,7 +25,7 @@
 - [ ] Test form submission
 - [ ] Set up email notifications
 - [ ] Test WhatsApp link with actual number
-- [ ] Test Calendly integration
+- [ ] Test Cal.com integration
 
 ### 4. Performance
 - [ ] Optimize images (use WebP/AVIF format)
@@ -112,4 +112,8 @@
 - [ ] Accessible (WCAG 2.1 AA)
 - [ ] SEO optimized
 - [ ] Cross-browser compatible
+
+
+
+
 

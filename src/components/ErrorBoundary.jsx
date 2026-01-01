@@ -27,12 +27,12 @@ class ErrorBoundary extends Component {
             className="max-w-2xl mx-auto text-center"
           >
             <div className="mb-6">
-              <AlertTriangle className="text-saddle_brown mx-auto" size={64} />
+              <AlertTriangle className="text-saddle-brown mx-auto" size={64} />
             </div>
-            <h1 className="text-3xl font-bold text-khaki_beige-900 mb-4 font-comfortaa">
+            <h1 className="text-3xl font-bold text-khaki-beige-900 mb-4 font-comfortaa">
               Something went wrong
             </h1>
-            <p className="text-dry_sage-700 mb-8">
+            <p className="text-dry-sage-700 mb-8">
               We encountered an unexpected error. Please try refreshing the page.
             </p>
             <button
@@ -40,7 +40,7 @@ class ErrorBoundary extends Component {
                 this.setState({ hasError: false, error: null });
                 window.location.reload();
               }}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee_brown to-saddle_brown hover:from-saddle_brown hover:to-toffee_brown text-khaki_beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee-brown to-saddle-brown hover:from-saddle-brown hover:to-toffee-brown text-khaki-beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <RefreshCw size={20} />
               Refresh Page
@@ -55,4 +55,8 @@ class ErrorBoundary extends Component {
 }
 
 export default ErrorBoundary;
+
+
+
+
 

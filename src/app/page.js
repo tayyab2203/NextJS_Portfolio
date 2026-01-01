@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       
       {/* About Preview Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-charcoal_brown">
+      <section className="py-20 bg-gradient-to-b from-black to-charcoal-brown">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -24,10 +24,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-khaki_beige-900 font-comfortaa">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-khaki-beige-900 font-comfortaa">
               About Me
             </h2>
-            <p className="text-dry_sage-700 text-lg max-w-3xl mx-auto">
+            <p className="text-dry-sage-700 text-lg max-w-3xl mx-auto">
               Passionate developer with a track record of delivering innovative solutions
             </p>
           </motion.div>
@@ -45,13 +45,13 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="bg-ebony/50 p-6 rounded-xl border border-dusty_olive/30 hover:border-camel/50 transition-all duration-300"
+                className="bg-ebony/50 p-6 rounded-xl border border-dusty-olive/30 hover:border-camel/50 transition-all duration-300"
               >
-                <div className="bg-gradient-to-br from-toffee_brown/20 to-camel/20 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
-                  <item.icon className="text-toffee_brown" size={32} />
+                <div className="bg-gradient-to-br from-toffee-brown/20 to-camel/20 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
+                  <item.icon className="text-toffee-brown" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-khaki_beige-900 mb-2">{item.title}</h3>
-                <p className="text-dry_sage-600">{item.desc}</p>
+                <h3 className="text-xl font-bold text-khaki-beige-900 mb-2">{item.title}</h3>
+                <p className="text-dry-sage-600">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
           >
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 text-camel hover:text-khaki_beige font-semibold transition-colors duration-300 group"
+              className="inline-flex items-center gap-2 text-camel hover:text-khaki-beige font-semibold transition-colors duration-300 group"
             >
               Learn More About Me
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -75,7 +75,7 @@ export default function Home() {
       </section>
 
       {/* Skills Preview Section */}
-      <section className="py-20 bg-gradient-to-b from-charcoal_brown to-black">
+      <section className="py-20 bg-gradient-to-b from-charcoal-brown to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -84,10 +84,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-khaki_beige-900 font-comfortaa">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-khaki-beige-900 font-comfortaa">
               Core Skills
             </h2>
-            <p className="text-dry_sage-700 text-lg max-w-3xl mx-auto">
+            <p className="text-dry-sage-700 text-lg max-w-3xl mx-auto">
               Technologies I work with to bring your vision to life
             </p>
           </motion.div>
@@ -101,13 +101,13 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 whileHover={{ scale: 1.1, y: -5 }}
-                className="bg-ebony/50 p-4 rounded-xl border border-dusty_olive/30 hover:border-camel/50 transition-all duration-300 text-center group cursor-pointer"
+                className="bg-ebony/50 p-4 rounded-xl border border-dusty-olive/30 hover:border-camel/50 transition-all duration-300 text-center group cursor-pointer"
               >
                 {skill.icon && (
-                  <skill.icon className="text-toffee_brown mx-auto mb-2 group-hover:scale-110 transition-transform" size={32} />
+                  <skill.icon className="text-toffee-brown mx-auto mb-2 group-hover:scale-110 transition-transform" size={32} />
                 )}
-                <p className="text-khaki_beige-900 font-semibold text-sm">{skill.name}</p>
-                <p className="text-dry_sage-600 text-xs mt-1">{skill.level}%</p>
+                <p className="text-khaki-beige-900 font-semibold text-sm">{skill.name}</p>
+                <p className="text-dry-sage-600 text-xs mt-1">{skill.level}%</p>
               </motion.div>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
           >
             <Link
               href="/skills"
-              className="inline-flex items-center gap-2 text-camel hover:text-khaki_beige font-semibold transition-colors duration-300 group"
+              className="inline-flex items-center gap-2 text-camel hover:text-khaki-beige font-semibold transition-colors duration-300 group"
             >
               View All Skills
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -140,10 +140,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-khaki_beige-900 font-comfortaa">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-khaki-beige-900 font-comfortaa">
               Featured Projects
             </h2>
-            <p className="text-dry_sage-700 text-lg max-w-3xl mx-auto">
+            <p className="text-dry-sage-700 text-lg max-w-3xl mx-auto">
               Showcasing innovative solutions and real-world impact
             </p>
           </motion.div>
@@ -157,43 +157,43 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="bg-ebony/50 rounded-xl border border-dusty_olive/30 hover:border-camel/50 transition-all duration-300 overflow-hidden group"
+                className="bg-ebony/50 rounded-xl border border-dusty-olive/30 hover:border-camel/50 transition-all duration-300 overflow-hidden group"
               >
-                <div className="h-48 bg-gradient-to-br from-toffee_brown/20 to-camel/20 flex items-center justify-center">
-                  <Briefcase className="text-toffee_brown" size={48} />
+                <div className="h-48 bg-gradient-to-br from-toffee-brown/20 to-camel/20 flex items-center justify-center">
+                  <Briefcase className="text-toffee-brown" size={48} />
                 </div>
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-bold text-khaki_beige-900">{project.title}</h3>
-                    <ExternalLink className="text-dry_sage-600 group-hover:text-camel transition-colors" size={20} />
+                    <h3 className="text-xl font-bold text-khaki-beige-900">{project.title}</h3>
+                    <ExternalLink className="text-dry-sage-600 group-hover:text-camel transition-colors" size={20} />
                   </div>
-                  <p className="text-dry_sage-600 text-sm mb-4 line-clamp-2">{project.problem}</p>
+                  <p className="text-dry-sage-600 text-sm mb-4 line-clamp-2">{project.problem}</p>
                   {project.metrics && (
                     <div className="flex gap-4 mb-4">
                       {project.metrics.users && (
                         <div>
                           <p className="text-camel font-bold">{typeof project.metrics.users === 'number' ? project.metrics.users.toLocaleString() : project.metrics.users}</p>
-                          <p className="text-dry_sage-600 text-xs">Users</p>
+                          <p className="text-dry-sage-600 text-xs">Users</p>
                         </div>
                       )}
                       {project.metrics.growth && (
                         <div>
                           <p className="text-camel font-bold">{project.metrics.growth}</p>
-                          <p className="text-dry_sage-600 text-xs">Growth</p>
+                          <p className="text-dry-sage-600 text-xs">Growth</p>
                         </div>
                       )}
                     </div>
                   )}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.techStack?.slice(0, 3).map((tech, idx) => (
-                      <span key={idx} className="px-2 py-1 bg-charcoal_brown/50 text-dry_sage-600 text-xs rounded">
+                      <span key={idx} className="px-2 py-1 bg-charcoal-brown/50 text-dry-sage-600 text-xs rounded">
                         {tech}
                       </span>
                     ))}
                   </div>
                   <Link
                     href="/projects"
-                    className="text-camel hover:text-khaki_beige text-sm font-semibold transition-colors inline-flex items-center gap-1"
+                    className="text-camel hover:text-khaki-beige text-sm font-semibold transition-colors inline-flex items-center gap-1"
                   >
                     View Project
                     <ArrowRight size={16} />
@@ -212,7 +212,7 @@ export default function Home() {
           >
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee_brown to-saddle_brown hover:from-saddle_brown hover:to-toffee_brown text-khaki_beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee-brown to-saddle-brown hover:from-saddle-brown hover:to-toffee-brown text-khaki-beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               View All Projects
               <ArrowRight size={20} />
@@ -222,27 +222,27 @@ export default function Home() {
       </section>
 
       {/* Decision Helper Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-charcoal_brown">
+      <section className="py-20 bg-gradient-to-b from-black to-charcoal-brown">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="bg-gradient-to-br from-ebony/80 to-charcoal_brown/80 rounded-2xl border border-camel/30 p-8 md:p-12 overflow-hidden relative"
+            className="bg-gradient-to-br from-ebony/80 to-charcoal-brown/80 rounded-2xl border border-camel/30 p-8 md:p-12 overflow-hidden relative"
           >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-toffee_brown/10 to-camel/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-toffee-brown/10 to-camel/10 rounded-full blur-3xl" />
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-1">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ebony/50 border border-camel/30 mb-4">
                     <Code className="text-camel" size={16} />
-                    <span className="text-dry_sage-600 text-sm font-medium">AI Decision Assistant</span>
+                    <span className="text-dry-sage-600 text-sm font-medium">AI Decision Assistant</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-khaki_beige-900 font-comfortaa">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-khaki-beige-900 font-comfortaa">
                     Make Smart Project Decisions
                   </h2>
-                  <p className="text-dry_sage-700 mb-6 text-lg">
+                  <p className="text-dry-sage-700 mb-6 text-lg">
                     Not sure whether to build or buy? MVP or full product? Web or mobile first? 
                     Get AI-powered recommendations to avoid costly mistakes and build the right solution.
                   </p>
@@ -253,7 +253,7 @@ export default function Home() {
                       'Platform selection (Web/Mobile)',
                       'AI integration recommendations'
                     ].map((feature, index) => (
-                      <li key={index} className="flex items-center gap-2 text-dry_sage-700">
+                      <li key={index} className="flex items-center gap-2 text-dry-sage-700">
                         <CheckCircle className="text-camel" size={18} />
                         <span>{feature}</span>
                       </li>
@@ -261,14 +261,14 @@ export default function Home() {
                   </ul>
                   <Link
                     href="/decision-helper"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee_brown to-saddle_brown hover:from-saddle_brown hover:to-toffee_brown text-khaki_beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee-brown to-saddle-brown hover:from-saddle-brown hover:to-toffee-brown text-khaki-beige-900 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                   >
                     Try Decision Helper
                     <ArrowRight size={20} />
                   </Link>
                 </div>
                 <div className="flex-shrink-0">
-                  <div className="w-64 h-64 bg-gradient-to-br from-toffee_brown/20 to-camel/20 rounded-2xl flex items-center justify-center border border-camel/30">
+                  <div className="w-64 h-64 bg-gradient-to-br from-toffee-brown/20 to-camel/20 rounded-2xl flex items-center justify-center border border-camel/30">
                     <Code className="text-camel" size={80} />
                   </div>
                 </div>
@@ -279,7 +279,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-charcoal_brown to-ebony">
+      <section className="py-20 bg-gradient-to-br from-charcoal-brown to-ebony">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -287,15 +287,15 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-khaki_beige-900 font-comfortaa">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-khaki-beige-900 font-comfortaa">
               Ready to Start Your Project?
             </h2>
-            <p className="text-dry_sage-700 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-dry-sage-700 text-lg mb-8 max-w-2xl mx-auto">
               Let's collaborate to turn your ideas into exceptional digital experiences
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee_brown to-saddle_brown hover:from-saddle_brown hover:to-toffee_brown text-khaki_beige-900 px-10 py-5 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-toffee-brown to-saddle-brown hover:from-saddle-brown hover:to-toffee-brown text-khaki-beige-900 px-10 py-5 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
             >
               Get In Touch
               <ArrowRight size={24} />

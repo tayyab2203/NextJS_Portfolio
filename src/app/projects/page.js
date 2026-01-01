@@ -31,7 +31,7 @@ export default function Projects() {
         {/* Featured Projects */}
         {featuredProjects.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-khaki_beige font-comfortaa">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-khaki-beige font-comfortaa">
               Featured Projects
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -45,7 +45,7 @@ export default function Projects() {
         {/* Other Projects */}
         {otherProjects.length > 0 && (
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-khaki_beige font-comfortaa">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-khaki-beige font-comfortaa">
               Other Projects
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -200,7 +200,7 @@ export default function DecisionHelper() {
   const progress = ((currentStep + 1) / questions.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-charcoal_brown via-black to-charcoal_brown pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-charcoal-brown via-black to-charcoal-brown pt-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <motion.div
@@ -211,12 +211,12 @@ export default function DecisionHelper() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ebony/50 border border-camel/30 mb-6">
             <Brain className="text-camel" size={20} />
-            <span className="text-dry_sage-600 text-sm font-medium">AI Decision Assistant</span>
+            <span className="text-dry-sage-600 text-sm font-medium">AI Decision Assistant</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-khaki_beige-900 font-comfortaa">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-khaki-beige-900 font-comfortaa">
             Smart Project Decisions
           </h1>
-          <p className="text-dry_sage-700 text-lg max-w-2xl mx-auto">
+          <p className="text-dry-sage-700 text-lg max-w-2xl mx-auto">
             Get AI-powered recommendations to avoid costly mistakes and build the right solution
           </p>
         </motion.div>
@@ -230,14 +230,14 @@ export default function DecisionHelper() {
               className="mb-8"
             >
               <div className="flex justify-between items-center mb-2">
-                <span className="text-dry_sage-600 text-sm">
+                <span className="text-dry-sage-600 text-sm">
                   Question {currentStep + 1} of {questions.length}
                 </span>
                 <span className="text-camel text-sm font-semibold">{Math.round(progress)}%</span>
               </div>
               <div className="h-2 bg-ebony/50 rounded-full overflow-hidden">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-toffee_brown to-camel rounded-full"
+                  className="h-full bg-gradient-to-r from-toffee-brown to-camel rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${progress}%` }}
                   transition={{ duration: 0.3 }}
@@ -253,13 +253,13 @@ export default function DecisionHelper() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.3 }}
-                className="bg-ebony/50 rounded-2xl border border-dusty_olive/30 p-8 md:p-12 mb-8"
+                className="bg-ebony/50 rounded-2xl border border-dusty-olive/30 p-8 md:p-12 mb-8"
               >
                 <div className="mb-8">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-3 text-khaki_beige-900 font-comfortaa">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-3 text-khaki-beige-900 font-comfortaa">
                     {currentQuestion.question}
                   </h2>
-                  <p className="text-dry_sage-600 text-lg">{currentQuestion.description}</p>
+                  <p className="text-dry-sage-600 text-lg">{currentQuestion.description}</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
@@ -276,24 +276,24 @@ export default function DecisionHelper() {
                         className={`p-6 rounded-xl border-2 transition-all duration-300 text-left ${
                           isSelected
                             ? 'border-camel bg-camel/10 shadow-lg'
-                            : 'border-dusty_olive/30 hover:border-camel/50 bg-charcoal_brown/30'
+                            : 'border-dusty-olive/30 hover:border-camel/50 bg-charcoal-brown/30'
                         }`}
                       >
                         <div className="flex items-start gap-4">
                           <div className={`p-3 rounded-lg ${
                             isSelected 
-                              ? 'bg-gradient-to-br from-toffee_brown to-camel' 
+                              ? 'bg-gradient-to-br from-toffee-brown to-camel' 
                               : 'bg-ebony/50'
                           }`}>
-                            <Icon className={isSelected ? 'text-charcoal_brown' : 'text-toffee_brown'} size={24} />
+                            <Icon className={isSelected ? 'text-charcoal-brown' : 'text-toffee-brown'} size={24} />
                           </div>
                           <div className="flex-1">
                             <h3 className={`text-xl font-bold mb-2 ${
-                              isSelected ? 'text-camel' : 'text-khaki_beige-900'
+                              isSelected ? 'text-camel' : 'text-khaki-beige-900'
                             }`}>
                               {option.label}
                             </h3>
-                            <p className="text-dry_sage-600 text-sm">{option.description}</p>
+                            <p className="text-dry-sage-600 text-sm">{option.description}</p>
                           </div>
                           {isSelected && (
                             <CheckCircle className="text-camel flex-shrink-0" size={24} />
@@ -309,7 +309,7 @@ export default function DecisionHelper() {
                   <button
                     onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
                     disabled={currentStep === 0}
-                    className="flex items-center gap-2 px-6 py-3 rounded-lg border border-dusty_olive/30 text-dry_sage-700 hover:border-camel/50 hover:text-camel transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex items-center gap-2 px-6 py-3 rounded-lg border border-dusty-olive/30 text-dry-sage-700 hover:border-camel/50 hover:text-camel transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <ArrowLeft size={20} />
                     Previous
@@ -324,7 +324,7 @@ export default function DecisionHelper() {
                           generateRecommendations(answers);
                         }
                       }}
-                      className="flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-toffee_brown to-saddle_brown hover:from-saddle_brown hover:to-toffee_brown text-khaki_beige-900 font-semibold transition-all duration-300"
+                      className="flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-toffee-brown to-saddle-brown hover:from-saddle-brown hover:to-toffee-brown text-khaki-beige-900 font-semibold transition-all duration-300"
                     >
                       {currentStep === questions.length - 1 ? 'Get Recommendations' : 'Next'}
                       <ArrowRight size={20} />
@@ -343,12 +343,12 @@ export default function DecisionHelper() {
             className="space-y-6"
           >
             {/* What NOT to Build */}
-            <div className="bg-ebony/50 rounded-2xl border border-dusty_olive/30 p-8">
+            <div className="bg-ebony/50 rounded-2xl border border-dusty-olive/30 p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-saddle_brown to-dark_walnut">
-                  <XCircle className="text-khaki_beige-900" size={24} />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-saddle-brown to-dark_walnut">
+                  <XCircle className="text-khaki-beige-900" size={24} />
                 </div>
-                <h2 className="text-2xl font-bold text-khaki_beige-900 font-comfortaa">
+                <h2 className="text-2xl font-bold text-khaki-beige-900 font-comfortaa">
                   What NOT to Build
                 </h2>
               </div>
@@ -359,9 +359,9 @@ export default function DecisionHelper() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-3 text-dry_sage-700"
+                    className="flex items-start gap-3 text-dry-sage-700"
                   >
-                    <span className="text-saddle_brown mt-1">✗</span>
+                    <span className="text-saddle-brown mt-1">✗</span>
                     <span>{item}</span>
                   </motion.li>
                 ))}
@@ -369,12 +369,12 @@ export default function DecisionHelper() {
             </div>
 
             {/* Where You'll Waste Money */}
-            <div className="bg-ebony/50 rounded-2xl border border-dusty_olive/30 p-8">
+            <div className="bg-ebony/50 rounded-2xl border border-dusty-olive/30 p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-dark_walnut to-saddle_brown">
-                  <AlertTriangle className="text-khaki_beige-900" size={24} />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-dark_walnut to-saddle-brown">
+                  <AlertTriangle className="text-khaki-beige-900" size={24} />
                 </div>
-                <h2 className="text-2xl font-bold text-khaki_beige-900 font-comfortaa">
+                <h2 className="text-2xl font-bold text-khaki-beige-900 font-comfortaa">
                   Where You'll Waste Money
                 </h2>
               </div>
@@ -385,7 +385,7 @@ export default function DecisionHelper() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-3 text-dry_sage-700"
+                    className="flex items-start gap-3 text-dry-sage-700"
                   >
                     <span className="text-dark_walnut mt-1">⚠</span>
                     <span>{item}</span>
@@ -395,12 +395,12 @@ export default function DecisionHelper() {
             </div>
 
             {/* Smart Approach */}
-            <div className="bg-gradient-to-br from-ebony/50 to-charcoal_brown/50 rounded-2xl border border-camel/30 p-8">
+            <div className="bg-gradient-to-br from-ebony/50 to-charcoal-brown/50 rounded-2xl border border-camel/30 p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-toffee_brown to-camel">
-                  <Lightbulb className="text-charcoal_brown" size={24} />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-toffee-brown to-camel">
+                  <Lightbulb className="text-charcoal-brown" size={24} />
                 </div>
-                <h2 className="text-2xl font-bold text-khaki_beige-900 font-comfortaa">
+                <h2 className="text-2xl font-bold text-khaki-beige-900 font-comfortaa">
                   Smart Approach
                 </h2>
               </div>
@@ -411,7 +411,7 @@ export default function DecisionHelper() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-3 text-dry_sage-700"
+                    className="flex items-start gap-3 text-dry-sage-700"
                   >
                     <span className="text-camel mt-1">✓</span>
                     <span>{item}</span>
@@ -424,7 +424,7 @@ export default function DecisionHelper() {
             <div className="text-center pt-6">
               <button
                 onClick={reset}
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-toffee_brown to-saddle_brown hover:from-saddle_brown hover:to-toffee_brown text-khaki_beige-900 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-toffee-brown to-saddle-brown hover:from-saddle-brown hover:to-toffee-brown text-khaki-beige-900 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Start Over
                 <ArrowRight size={20} />
@@ -436,4 +436,8 @@ export default function DecisionHelper() {
     </div>
   );
 }
+
+
+
+
 
